@@ -6,19 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
-    <load ="partials/header.html" />
+    <form action="submit" class="form">
+      <div class="search-container">
+        <input
+          type="text"
+          class="responce-input"
+          name="input"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="submit-btn">Search</button>
+      </div>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
-    <script type="module" src="./main.js"></script>
+      <ul class="gallery">
+        <li class="gallery-item">
+          <a
+            class="gallery-link"
+            href="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg"
+          >
+            <img
+              class="gallery-image"
+              src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
+              alt="pic"
+            />
+            <ul class="descriptions">
+              <li class="description-item">
+                <p class="name">Likes</p>
+                <p class="count">1324</p>
+              </li>
+              <li class="description-item">
+                <p class="name">Viewes</p>
+                <p class="count">1324</p>
+              </li>
+              <li class="description-item">
+                <p class="name">Comments</p>
+                <p class="count">1324</p>
+              </li>
+              <li class="description-item">
+                <p class="name">Downloads</p>
+                <p class="count">1324</p>
+              </li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+    </form>
   </body>
 </html>
