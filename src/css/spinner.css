@@ -1,0 +1,32 @@
+.loader {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 32px 0 #fff, -32px 0 #fff;
+    position: relative;
+    animation: flash 0.5s ease-out infinite alternate;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+@keyframes flash {
+    0% {
+        background-color: rgba(218, 218, 218, 0.26);
+        box-shadow: 32px 0 #FFF2, -32px 0 #3d49d7;
+    }
+
+    50% {
+        background-color: #3d49d7;
+        box-shadow: 32px 0 #FFF2, -32px 0 #FFF2;
+    }
+
+    100% {
+        background-color: rgba(218, 218, 218, 0.26);
+        box-shadow: 32px 0 #3d49d7, -32px 0 #FFF2;
+    }
+}
