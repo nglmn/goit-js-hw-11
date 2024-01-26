@@ -1,9 +1,9 @@
 import iziToast from "izitoast";
-import { iziToastError } from "./custom_iziToast";
+import { iziToastError } from "./js/custom_iziToast";
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-import { fetchGallery } from "./fetching";
+import { fetchGallery } from "./js/fetching";
 
 const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
